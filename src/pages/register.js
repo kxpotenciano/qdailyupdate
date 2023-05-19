@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "../api/axios";
 import {useState} from "react";
+import Navbar from "../component/navbar";
 
 export default function Register() {
 
@@ -40,6 +41,8 @@ export default function Register() {
             };
     
     return ( 
+        <div>
+         <Navbar/>
     <section>
     <div className="flex flex-col inline-block items-center px-6 py-8 mx-auto md:h-screen lg:py-0"><br/><br/><br/><br/><br/>
     <div className="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-800 dark:border-gray-700">
@@ -104,5 +107,6 @@ export default function Register() {
     </div>
 </div>
 </section>
+</div>
 )
 }

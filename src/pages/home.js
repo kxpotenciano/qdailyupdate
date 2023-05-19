@@ -1,9 +1,11 @@
+import Navbar from "../component/navbar";
+
 export default function Home(){
     return(
 <div>
-        <navbar/>
+        <Navbar/>
     <div>
-            <h1>THIS IS HOME PAGE</h1>
+            <h1>THIS IS HOME PAGE WHEN NOT LOGGED IN</h1>
     </div>
 </div>
     )
