@@ -3,7 +3,7 @@ import AuthContext from "../context/authcontext"
 
 export default function Navbar(){
 
-    let {name} = useContext(AuthContext)
+    let {user} = useContext(AuthContext)
     return(
       
     <nav className="bg-white border-gray-200 dark:bg-gray-900">
@@ -28,7 +28,8 @@ export default function Navbar(){
           <a href="http://localhost:3000/Login" className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Sign In</a>
         </li>
         <li>
-          <p>Hello {name}</p>
+          
+         {user && <p>Hello {user.email}</p>}
         </li>
       </ul>
     </div>
