@@ -3,10 +3,10 @@ import {useContext} from 'react'
 import AuthContext from '../context/authcontext'
 
 const PrivateRoutes = () => {
-    let {user} = useContext(AuthContext)
+    let auth = {'tokens': false}
     return(
 
-        auth.token ? <Outlet/> : <Navigate to="/home"/>
+        auth.tokens ? <Outlet/> : <Navigate to="/register"/>
     )
 }
 
