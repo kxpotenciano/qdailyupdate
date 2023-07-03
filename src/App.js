@@ -27,7 +27,6 @@ function App() {
               <Routes>
                 <Route element={<PrivateRoutes/>}>
                   <Route path="/mainpage" element={<Mainpage/>}/>
-
                 </Route>
                 <Route path="/AnnMainPage" element={<AnnMainPage/>}/>
                 <Route path="/announcements" element={<Announcements/>}/>
