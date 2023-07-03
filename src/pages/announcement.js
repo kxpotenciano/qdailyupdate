@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import AnnPage from "./annPage"
 import AnnPage2 from "./annPage2"
-import Navbar from '../component/navbar2'
 
 function Announcement() {
   const [todos, setTodos] = useState([]);
@@ -13,10 +12,10 @@ function Announcement() {
   };
   
   return (
-    <> <Navbar/> <br/>
+    <div> 
       <AnnPage addTodo = { addTodo }/> <br/>
       <AnnPage2 todos={ todos }/>
-    </>
+    </div>
   );
 } 
 

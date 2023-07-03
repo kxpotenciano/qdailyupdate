@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import Navbar from "../component/navbar2";
 
 function AnnPage(props) {
+
   const [input, setInput] = useState(" ");
 
-  const handleChange = (event) => {
-    setInput(event.target.value);
+  const handleChange = (e) => {
+    setInput(e.target.value);
   };
 
   const handleSubmit = e => {
@@ -14,6 +16,7 @@ function AnnPage(props) {
   };
 
   return (
+    <div><Navbar/><br/>
     <form className="" onSubmit={handleSubmit}>
       <textarea id="message" rows="4" class="block p-2.5 w-96 text-sm text-gray-900 bg-gray-50 rounded-lg border 
       border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 
@@ -24,7 +27,7 @@ function AnnPage(props) {
       dark:focus:ring-gray-700 dark:border-gray-700" > 
         POST
       </button>
-    </form>
+    </form></div>
   );
 }
 

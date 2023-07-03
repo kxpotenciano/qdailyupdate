@@ -4,8 +4,8 @@ function UpdMainPage() {
 
     <div>
         <Navbar/><br/>
-    <button> <a href="http://localhost:3000/Updates"></a>
-        Post Announcement
+    <button> <a href="http://localhost:3000/UpdPage">
+        Post update</a>
     </button>
     </div>
 }

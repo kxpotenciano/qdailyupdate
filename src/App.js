@@ -4,10 +4,12 @@ import Home from "./pages/home"
 import Login from "./pages/login"
 import Mainpage from "./pages/mainpagelogin"
 import PrivateRoutes from "./utility/privateroute"
+
 import AnnMainPage from './pages/annMainPage';
 import AnnPage from './pages/annPage'
 import AnnPage2 from './pages/annPage2'
 import Announcements from './pages/announcement';
+
 import UpdMainPage from './pages/updMainPage';
 import Updates from './pages/updates';
 import UpdPage from './pages/updPage'
@@ -25,11 +27,12 @@ function App() {
               <Routes>
                 <Route element={<PrivateRoutes/>}>
                   <Route path="/mainpage" element={<Mainpage/>}/>
-                  <Route path="/annMainPage" element={<AnnMainPage/>}/>
-                  <Route path="/announcements" element={<Announcements/>}/>
-                  <Route path="/UpdMainPage" element={<UpdMainPage/>}/>
-                  <Route path="/updates" element={<Updates/>}/>
+
                 </Route>
+                <Route path="/AnnMainPage" element={<AnnMainPage/>}/>
+                <Route path="/announcements" element={<Announcements/>}/>
+                <Route path="/UpdMainPage" element={<UpdMainPage/>}/>
+                <Route path="/updates" element={<Updates/>}/>
                 <Route path="/register" element={<Register/>}/>
                 <Route path="/login" element={<Login/>}/>
                 <Route path="/home" element={<Home/>}/>
